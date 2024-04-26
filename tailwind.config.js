@@ -9,7 +9,12 @@ export default {
     "./vendor/tallstackui/tallstackui/src/**/*.php",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'inter': ['"Inter"', 'sans-serif'],
+        'poppins': ['"Poppins"', 'sans-serif'],
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),
