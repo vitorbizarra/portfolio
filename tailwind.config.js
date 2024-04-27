@@ -10,7 +10,9 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {}
+      fontFamily: {
+        'inter': ['"Inter"', 'sans-serif']
+      }
     },
   },
   plugins: [
