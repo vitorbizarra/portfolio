@@ -21,7 +21,7 @@
     @yield('seo')
 </head>
 
-<body class="bg-dracula-darker-900">
+<body class="bg-dracula-darker-800">
     @include('googletagmanager::body')
 
     <x-dialog />
