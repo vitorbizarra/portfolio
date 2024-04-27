@@ -1,5 +1,4 @@
-<div
-    class="h-svh bg-gradient-to-b from-transparent to-dracula-darker-900 text-dracula-light-50 flex flex-col lg:flex-row lg:items-center">
+<div class="h-svh flex flex-col lg:flex-row lg:items-center">
     <div class="w-full max-w-screen-lg mx-auto px-4 flex flex-col lg:flex-row">
         <div class="w-full h-full">
             <h1>Vitor Bizarra</h1>
@@ -20,7 +19,8 @@
                 <li> 2</li>
                 <li> 3&nbsp;&nbsp;<span class="text-dracula-pink-300">class</span> <span
                         class="text-dracula-cyan-300">Person</span> <span class="text-dracula-pink-300">extends</span>
-                    <span class="text-dracula-cyan-300">Developer</span></li>
+                    <span class="text-dracula-cyan-300">Developer</span>
+                </li>
                 <li> 4&nbsp;&nbsp;{</li>
                 <li> 5&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-dracula-pink-300">public</span> $name = <span
                         class="text-dracula-yellow-300">"Vitor Bizarra"</span>;</li>
