@@ -8,6 +8,7 @@
         "php": "^8.2",
         "codeat3/blade-codicons": "^1.33",
         "codeat3/blade-devicons": "^1.7",
+        "codeat3/blade-simple-icons": "^3.14",
         "filament/filament": "^3.2",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
