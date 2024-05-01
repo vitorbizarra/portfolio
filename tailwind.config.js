@@ -19,5 +19,6 @@ export default {
   plugins: [
     require('@tailwindcss/forms'),
     require('tailwind-dracula')('dracula', true),
+    require('tailwindcss-animated')
   ],
 }
