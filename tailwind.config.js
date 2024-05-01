@@ -11,7 +11,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'inter': ['"Inter"', 'sans-serif']
+        'roboto': ['"Roboto Mono"', 'monospace'],
+        'montserrat': ['"Montserrat"', 'sans-serif'],
       }
     },
   },
