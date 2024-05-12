@@ -3,3 +3,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+    @apply h-2 w-1.5
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-zinc-900
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-dracula-darker-800 rounded-full hover:bg-dracula-vonCount transition-all ease-in-out
+}
