@@ -36,28 +36,28 @@
                 </li>
             </ul>
         </div>
-        <div class="w-full md:w-1/2 space-y-4">
+        <form wire:submit="save" class="w-full md:w-1/2 space-y-4">
             <div class="" x-data="{ intersect: false }" x-intersect:enter="intersect=true"
                 :class="intersect ? 'animate-fade-left animate-delay-100' : 'opacity-0'">
-                <x-input label="Nome" placeholder="Seu nome" />
+                <x-input wire:model.lazy="form.name" label="Nome" placeholder="Seu nome" />
 
             </div>
 
             <div class="" x-data="{ intersect: false }" x-intersect:enter="intersect=true"
                 :class="intersect ? 'animate-fade-left animate-delay-200' : 'opacity-0'">
-                <x-input label="Seu melhor email" placeholder="seu@email.com" />
+                <x-input wire:model.lazy="form.email" label="Seu melhor email" placeholder="seu@email.com" />
 
             </div>
 
             <div class="" x-data="{ intersect: false }" x-intersect:enter="intersect=true"
                 :class="intersect ? 'animate-fade-left animate-delay-300' : 'opacity-0'">
-                <x-input label="Assunto" placeholder="Motivo do contato" />
+                <x-input wire:model.lazy="form.subject" label="Assunto" placeholder="Motivo do contato" />
 
             </div>
 
             <div class="" x-data="{ intersect: false }" x-intersect:enter="intersect=true"
                 :class="intersect ? 'animate-fade-left animate-delay-[400ms]' : 'opacity-0'">
-                <x-textarea label="Mensagem" placeholder="Escreva aqui sua mensagem" />
+                <x-textarea wire:model.lazy="form.message" label="Mensagem" placeholder="Escreva aqui sua mensagem" />
 
             </div>
 
@@ -67,6 +67,6 @@
                 :class="intersect ? 'animate-fade-left animate-delay-[500ms]' : 'opacity-0'">
                 <x-fas-paper-plane class="h-5 w-5" /> <span>Enviar</span>
             </button>
-        </div>
+        </form>
     </div>
 </div>
