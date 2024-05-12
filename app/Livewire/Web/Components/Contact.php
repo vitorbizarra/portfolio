@@ -3,7 +3,6 @@
 namespace App\Livewire\Web\Components;
 
 use App\Livewire\Forms\ContactForm;
-use Illuminate\Support\Facades\Notification;
 use Livewire\Component;
 use TallStackUi\Traits\Interactions;
 

@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Content\Technology;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class TechnologySeeder extends Seeder
