@@ -1,14 +1,17 @@
 <div class="max-w-screen-lg mx-auto px-4 py-8 lg:py-16">
     <div class="flex flex-col justify-center">
-        <h1 x-data="{ intersect: false }" x-intersect:enter="intersect=true"
-            class="text-2xl lg:text-4xl font-roboto font-bold mb-4 relative before:absolute before:bottom-0 before:translate-y-2 before:h-0.5 lg:before:h-1 before:w-16 before:bg-dracula-cyan-600"
-            :class="intersect ? 'animate-fade-right animate-delay-100' : 'opacity-0'">
-            Tecnologias
-        </h1>
-        <h2 x-data="{ intersect: false }" x-intersect:enter="intersect=true" class="text-lg lg:text-2xl font-roboto mb-4 lg:mb-8"
-            :class="intersect ? 'animate-fade-right animate-delay-200' : 'opacity-0'">
-            Conheça algumas tecnologias com as quais trabalho
-        </h2>
+        <div class="text-right">
+            <h1 x-data="{ intersect: false }" x-intersect:enter="intersect=true"
+                class="text-2xl lg:text-4xl font-roboto font-bold mb-4 relative before:absolute before:bottom-0 before:right-0 before:translate-y-2 before:h-0.5 lg:before:h-1 before:w-16 before:bg-dracula-cyan-600"
+                :class="intersect ? 'animate-fade-left animate-delay-100' : 'opacity-0'">
+                Tecnologias
+            </h1>
+            <h2 x-data="{ intersect: false }" x-intersect:enter="intersect=true"
+                class="text-lg lg:text-2xl font-roboto mb-4 lg:mb-8"
+                :class="intersect ? 'animate-fade-left animate-delay-200' : 'opacity-0'">
+                Conheça algumas tecnologias com as quais trabalho
+            </h2>
+        </div>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             @foreach ($technologies as $technology)
                 <div x-data="{ intersect: false }" x-intersect:enter="intersect=true"
