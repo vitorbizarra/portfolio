@@ -1,19 +1,18 @@
-<div>
-    <div class="py-8 lg:py-16">
-        <h1 x-data="{ intersect: false }" x-intersect:enter="intersect=true" x-intersect:leave="intersect=false"
+<div class="max-w-screen-lg mx-auto px-4 py-8 lg:py-16">
+    <div class="flex flex-col justify-center">
+        <h1 x-data="{ intersect: false }" x-intersect:enter="intersect=true"
             class="text-2xl lg:text-4xl font-roboto font-bold mb-4 relative before:absolute before:bottom-0 before:translate-y-2 before:h-0.5 lg:before:h-1 before:w-16 before:bg-dracula-cyan-600"
             :class="intersect ? 'animate-fade-right animate-delay-100' : 'opacity-0'">
             Tecnologias
         </h1>
-        <h2 x-data="{ intersect: false }" x-intersect:enter="intersect=true" x-intersect:leave="intersect=false"
-            class="text-lg lg:text-2xl font-roboto mb-4 lg:mb-8"
+        <h2 x-data="{ intersect: false }" x-intersect:enter="intersect=true" class="text-lg lg:text-2xl font-roboto mb-4 lg:mb-8"
             :class="intersect ? 'animate-fade-right animate-delay-200' : 'opacity-0'">
             Conheça algumas tecnologias com as quais trabalho
         </h2>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            @for ($i = 0; $i < 12; $i++)
-                <div x-data="{ intersect: false }" x-intersect:enter="intersect=true" x-intersect:leave="intersect=false"
-                    class="aspect-square rounded border border-dracula-pink-300 bg-dracula-darker-800 flex flex-col justify-center items-center
+            @foreach ($technologies as $technology)
+                <div x-data="{ intersect: false }" x-intersect:enter="intersect=true"
+                    class="aspect-square rounded border border-dracula-cyan-600 bg-zinc-800 flex flex-col gap-2 justify-center items-center
                     odd:animate-delay-100
                     even:animate-delay-200
 
@@ -31,11 +30,11 @@
                     "
                     :class="intersect ? 'animate-fade-up animate-delay-500' : 'opacity-0'">
 
-                    @svg('devicon-php', 'w-24 h-24')
+                    @svg($technology->icon, 'w-16 h-16')
 
-                    <span class="text-lg font-semibold">PHP</span>
+                    <span class="font-semibold font-montserrat">{{ $technology->name }}</span>
                 </div>
-            @endfor
+            @endforeach
         </div>
     </div>
 </div>

@@ -2,12 +2,16 @@
 
 namespace App\Livewire\Web\Components;
 
+use App\Models\Content\Technology;
+use Illuminate\Database\Eloquent\Collection;
 use Livewire\Component;
 
 class Technologies extends Component
 {
-    public function render()
+    public Collection $technologies;
+
+    public function mount()
     {
-        return view('livewire.web.components.technologies');
+        $this->technologies = Technology::orderBy('sort')->get();
     }
 }
