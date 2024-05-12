@@ -9,7 +9,7 @@
             <h2 x-data="{ intersect: false }" x-intersect:enter="intersect=true"
                 class="text-lg lg:text-2xl font-roboto mb-4 lg:mb-8"
                 :class="intersect ? 'animate-fade-right animate-delay-200' : 'opacity-0'">
-                Conheça um pouco sobre mim
+                Conheça um pouco <br> sobre mim
             </h2>
             <div class="text-gray-300 font-montserrat space-y-4">
                 <p x-data="{ intersect: false }" x-intersect:enter="intersect=true"

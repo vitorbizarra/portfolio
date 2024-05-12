@@ -7,6 +7,7 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./vendor/tallstackui/tallstackui/src/**/*.php",
+    "./app/Providers/*.php"
   ],
   theme: {
     extend: {

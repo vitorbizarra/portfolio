@@ -9,7 +9,7 @@
             <h2 x-data="{ intersect: false }" x-intersect:enter="intersect=true"
                 class="text-lg lg:text-2xl font-roboto mb-4 lg:mb-8"
                 :class="intersect ? 'animate-fade-left animate-delay-200' : 'opacity-0'">
-                Conheça algumas tecnologias com as quais trabalho
+                Conheça algumas tecnologias <br> com as quais trabalho
             </h2>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
