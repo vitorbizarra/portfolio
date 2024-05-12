@@ -2,7 +2,7 @@
     <div class="flex flex-col justify-center">
         <div class="text-right">
             <h1 x-data="{ intersect: false }" x-intersect:enter="intersect=true"
-                class="text-2xl lg:text-4xl font-roboto font-bold mb-4 relative before:absolute before:bottom-0 before:right-0 before:translate-y-2 before:h-0.5 lg:before:h-1 before:w-16 before:bg-dracula-cyan-600"
+                class="text-2xl lg:text-4xl font-roboto font-bold mb-4 relative before:absolute before:bottom-0 before:right-0 before:translate-y-2 before:h-0.5 lg:before:h-1 before:w-16 before:bg-dracula-purple-600"
                 :class="intersect ? 'animate-fade-left animate-delay-100' : 'opacity-0'">
                 Tecnologias
             </h1>
@@ -15,7 +15,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             @foreach ($technologies as $technology)
                 <div x-data="{ intersect: false }" x-intersect:enter="intersect=true"
-                    class="aspect-square rounded border border-dracula-cyan-600 bg-zinc-800 flex flex-col gap-2 justify-center items-center
+                    class="aspect-square rounded border border-dracula-purple-600 bg-zinc-800 flex flex-col gap-2 justify-center items-center
                     odd:animate-delay-100
                     even:animate-delay-200
 

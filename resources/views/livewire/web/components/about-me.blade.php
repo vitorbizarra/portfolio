@@ -19,7 +19,7 @@
                     Desenvolvimento de Sistemas na Facens.
                 </p>
                 <p x-data="{ intersect: false }" x-intersect:enter="intersect=true"
-                    :class="intersect ? 'animate-fade-right animate-delay-[400ms]' : 'opacity-0'">
+                    :class="intersect ? 'animate-fade-right animate-delay-300' : 'opacity-0'">
                     Possuo experiência em PHP, Laravel, Livewire Filament, Alpine.js, Tailwind CSS, além de habilidades
                     em integração de APIs e gerenciamento de código com Git e GitHub.
                 </p>

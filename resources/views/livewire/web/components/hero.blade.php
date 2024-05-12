@@ -17,20 +17,20 @@
             </p>
         </div>
         <div class="flex flex-wrap gap-4 font-montserrat font-semibold justify-center items-center">
-            <button
-                class="flex items-center gap-1.5 px-4 py-3 border bg-dracula-purple-800 border-dracula-purple-800 rounded-lg hover:bg-dracula-light-50 hover:text-dracula-purple-800 hover:border-dracula-light-50 transition-all ease-in-out"
+            <a href="#"
+                class="flex items-center gap-1.5 px-4 py-3 border bg-dracula-purple-600 border-dracula-purple-600 rounded-lg hover:bg-dracula-light-50 hover:text-dracula-purple-600 hover:border-dracula-light-50 transition-all ease-in-out"
                 x-data="{ intersect: false }" x-intersect:enter="intersect=true"
                 :class="intersect ? 'animate-fade-up animate-delay-[400ms]' : 'opacity-0'">
                 <x-fas-envelope class="h-5 w-5" />
                 <span class="leading-tight">Contato</span>
-            </button>
-            <button
+            </a>
+            <a href="https://github.com/vitorbizarra" target="_blank"
                 class="flex items-center gap-1.5 px-4 py-3 border border-dracula-light-50 rounded-lg hover:bg-dracula-light-50 hover:text-zinc-900 transition-all ease-in-out"
                 x-data="{ intersect: false }" x-intersect:enter="intersect=true"
                 :class="intersect ? 'animate-fade-up animate-delay-[500ms]' : 'opacity-0'">
                 <x-fab-github class="h-5 w-5" />
                 <span class="leading-tight">GitHub</span>
-            </button>
+            </a>
         </div>
     </div>
 </div>
