@@ -10,7 +10,7 @@ use TallStackUi\Traits\Interactions;
 class Contact extends Component
 {
     use Interactions;
-    
+
     public ContactForm $form;
 
     public function save()
