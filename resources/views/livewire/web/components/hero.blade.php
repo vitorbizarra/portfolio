@@ -17,7 +17,7 @@
             </p>
         </div>
         <div class="flex flex-wrap gap-4 font-montserrat font-semibold justify-center items-center">
-            <a href="#"
+            <a href="#contato"
                 class="flex items-center gap-1.5 px-4 py-3 border bg-dracula-purple-600 border-dracula-purple-600 rounded-lg hover:bg-dracula-light-50 hover:text-dracula-purple-600 hover:border-dracula-light-50 transition-all ease-in-out"
                 x-data="{ intersect: false }" x-intersect:enter="intersect=true"
                 :class="intersect ? 'animate-fade-up animate-delay-[400ms]' : 'opacity-0'">

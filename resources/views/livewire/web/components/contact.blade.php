@@ -1,5 +1,5 @@
-<div class="w-full bg-zinc-800 rounded-t-3xl py-8 lg:py-16">
-    <div class="flex flex-col md:flex-row gap-4 md:gap-8 max-w-screen-lg mx-auto font-roboto px-4 space-y-4">
+<div class="w-full bg-zinc-900 rounded-t-3xl py-8 lg:py-16" id="contato">
+    <div class="flex flex-col md:flex-row gap-4 md:gap-8 max-w-screen-xl mx-auto font-roboto px-4 space-y-4">
         <div class="w-full md:w-1/2">
             <h1 x-data="{ intersect: false }" x-intersect:enter="intersect=true"
                 class="text-2xl lg:text-4xl font-roboto font-bold mb-4 relative before:absolute before:bottom-0 before:translate-y-2 before:h-0.5 lg:before:h-1 before:w-16 before:bg-dracula-purple-600"

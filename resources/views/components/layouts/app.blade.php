@@ -21,7 +21,7 @@
     @yield('seo')
 </head>
 
-<body class="bg-zinc-900 text-dracula-light-50">
+<body class="bg-zinc-950 text-dracula-light-50">
     @include('googletagmanager::body')
 
     <x-dialog />
