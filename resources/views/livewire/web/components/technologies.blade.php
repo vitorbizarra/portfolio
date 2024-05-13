@@ -15,7 +15,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             @foreach ($technologies as $technology)
                 <div x-data="{ intersect: false }" x-intersect:enter="intersect=true"
-                    class="aspect-square rounded border border-dracula-purple-600 bg-zinc-800 flex flex-col gap-2 justify-center items-center
+                    class="aspect-square rounded shadow bg-zinc-800 flex flex-col gap-2 justify-center items-center hover:bg-dracula-purple-800 transition-all ease-in-out
                     odd:animate-delay-100
                     even:animate-delay-200
 
