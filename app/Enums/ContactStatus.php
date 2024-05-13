@@ -31,8 +31,8 @@ enum ContactStatus: string implements HasColor, HasIcon, HasLabel
     public function getIcon(): ?string
     {
         return match ($this) {
-            self::New => 'heroicon-o-clock',
-            self::Answered => 'heroicon-o-check-circle'
+            self::New => 'heroicon-s-clock',
+            self::Answered => 'heroicon-s-check-circle'
         };
     }
 
